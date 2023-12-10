@@ -1,12 +1,23 @@
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background: linear-gradient(to right, green, white, red); /* Estándar */
-    background: -webkit-linear-gradient(to right, green, white, red); /* Safari 5.1-6, Chrome 10-25 */
-    background: -o-linear-gradient(right, green, white, red); /* Opera 11.1-12 */
-  }
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: linear-gradient(to right, green, white, red);
+  /* Estándar */
+  background: -webkit-linear-gradient(to right, green, white, red);
+  /* Safari 5.1-6, Chrome 10-25 */
+  background: -o-linear-gradient(right, green, white, red);
+  /* Opera 11.1-12 */
+}
 
-  main {
-    flex: 1 0 auto;
-  }
+main {
+  flex: 1 0 auto;
+}
+
+h1 {
+  font-family: 'Tangerine', serif;
+  font-size: 75px;
+  text-shadow: 4px 4px 4px #aaa;
+  margin-left: 25%;
+  
+}

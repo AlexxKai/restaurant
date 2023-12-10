@@ -8,6 +8,7 @@
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
@@ -24,105 +25,113 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="green accent-4" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><i
-                    class="material-icons">restaurant</i>DARE UN NOME ORIGINALE</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="register.html">Register</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="index.html">Index</a></li>
-            </ul>
+    <header>
+        <nav class="green accent-4" role="navigation">
+            <div class="nav-wrapper container" style="width: auto;"><a id="logo-container" href="#"
+                    class="brand-logo"><i class="material-icons">restaurant</i>DARE UN NOME ORIGINALE</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./register.html">Register</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
 
-            <ul id="nav-mobile" class="sidenav">
-                <li><a href="register.html">Register</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="index.html">Index</a></li>
-            </ul>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
-    </nav>
-    <nav>
-        <div class="nav-wrapper green accent-4">
-            <div class="col s12" style="padding-left: 20%;">
-                <a href="./menu.html" class="breadcrumb">Menú</a>
-                <a href="./first.html" class="breadcrumb">First</a>
-                <a href="./second.html" class="breadcrumb">Second</a>
-                <a href="./dessert.html" class="breadcrumb">Dessert</a>
+                <ul id="nav-mobile" class="sidenav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./register.html">Register</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
-        </div>
-    </nav>
+        </nav>
+        <nav>
+            <div class="nav-wrapper green accent-4">
+                <div class="col s12" style="padding-left: 20%;">
+                    <a href="./menu.html" class="breadcrumb">Menu</a>
+                    <a href="./first.html" class="breadcrumb">First</a>
+                    <a href="./second.html" class="breadcrumb">Second</a>
+                    <a href="#" class="breadcrumb"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <!-- MAIN -->
-    <div style="margin-left: 10%; margin-right: 10%;">
-        <ul class="collapsible popout">
-            <li class="active">
-                <div class="collapsible-header"><i class="material-icons">filter_drama</i>Panna Cotta</div>
-                <div class="collapsible-body">
-                    <div class="col s12 m7">
-                        <div class="card">
-                            <div class="card-image"><br>
-                                <img src="./images/panna_cotta.jpg" style="width: 80%; margin-left: 10%;">
-                            </div>
-                            <div class="card-content">
-                                <p>Creamy flan made with cream, sugar and gelatine. You can choose to eat it on its own
-                                    or with fresh fruit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header"><i class="material-icons">place</i>Tiramisu</div>
-                <div class="collapsible-body">
-                    <div class="col s12 m7">
-                        <div class="card">
-                            <div class="card-image"><br>
-                                <img src="./images/tiramisu.jpeg" style="width: 80%; margin-left: 10%;">
-                            </div>
-                            <div class="card-content">
-                                <p>Layers of sponge cake soaked in coffee, mascarpone cheese, cocoa powder and a touch
-                                    of liqueur.</p>
+    <main>
+        <h1>Desserts</h1>
+        <div style="margin-left: 10%; margin-right: 10%;">
+            <ul class="collapsible popout">
+                <li class="active">
+                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Panna Cotta</div>
+                    <div class="collapsible-body">
+                        <div class="col s12 m7">
+                            <div class="card">
+                                <div class="card-image"><br>
+                                    <img src="./images/panna_cotta.jpg" style="width: 80%; margin-left: 10%;">
+                                </div>
+                                <div class="card-content">
+                                    <p>Creamy flan made with cream, sugar and gelatine. You can choose to eat it on its
+                                        own or with fresh fruit.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header"><i class="material-icons">star</i>Traditional Panettone</div>
-                <div class="collapsible-body">
-                    <div class="col s12 m7">
-                        <div class="card">
-                            <div class="card-image"><br>
-                                <img src="./images/Panettone_tradicional.webp" style="width: 60%;  margin-left: 20%;">
-                            </div>
-                            <div class="card-content">
-                                <p>Christmas cake made with butter, eggs, sultanas and candied fruit.
-                                    Ideal with coffee or tea.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header"><i class="material-icons">whatshot</i>Chocolate panettone</div>
-                <div class="collapsible-body">
-                    <div class="col s12 m7">
-                        <div class="card">
-                            <div class="card-image"><br>
-                                <img src="./images/Panettone_choco.webp" style="width: 60%; margin-left: 20%;">
-                            </div>
-                            <div class="card-content">
-                                <p>A variation of our original panettone, with nuggets of different chocolates inside.
-                                </p>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">place</i>Tiramisu</div>
+                    <div class="collapsible-body">
+                        <div class="col s12 m7">
+                            <div class="card">
+                                <div class="card-image"><br>
+                                    <img src="./images/tiramisu.jpeg" style="width: 80%; margin-left: 10%;">
+                                </div>
+                                <div class="card-content">
+                                    <p>Layers of sponge cake soaked in coffee, mascarpone cheese, cocoa powder and a
+                                        touch
+                                        of liqueur.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </li>
-        </ul>
-    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">star</i>Traditional Panettone</div>
+                    <div class="collapsible-body">
+                        <div class="col s12 m7">
+                            <div class="card">
+                                <div class="card-image"><br>
+                                    <img src="./images/Panettone_tradicional.webp"
+                                        style="width: 60%;  margin-left: 20%;">
+                                </div>
+                                <div class="card-content">
+                                    <p>Christmas cake made with butter, eggs, sultanas and candied fruit.
+                                        Ideal with coffee or tea.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Chocolate panettone</div>
+                    <div class="collapsible-body">
+                        <div class="col s12 m7">
+                            <div class="card">
+                                <div class="card-image"><br>
+                                    <img src="./images/Panettone_choco.webp" style="width: 60%; margin-left: 20%;">
+                                </div>
+                                <div class="card-content">
+                                    <p>A variation of our original panettone, with nuggets of different chocolates
+                                        inside.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
 
     <!-- FOOTER -->
     <footer class="page-footer">
