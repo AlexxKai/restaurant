@@ -3,6 +3,7 @@ body {
     min-height: 100vh;
     flex-direction: column;
     background: linear-gradient(to right, green, white, red); /* Estándar */
+    background: -webkit-linear-gradient(to right, green, white, red); /* Safari 5.1-6, Chrome 10-25 */
   }
 
   main {
