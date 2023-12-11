@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact</title>
+  <title>Order</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -29,16 +29,16 @@
     <nav class="green accent-4" role="navigation">
       <div class="nav-wrapper container" style="width: auto;">
         <ul class="right hide-on-med-and-down">
-          <li><a href="./register.html">Register</a></li>
+          <li><a href="./index.html">Home</a></li>
           <li><a href="./login.html">Login</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./register.html">Register</a></li>
           <li><a href="./menu.html">Menu</a></li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
-          <li><a href="./register.html">Register</a></li>
+          <li><a href="./index.html">Home</a></li>
           <li><a href="./login.html">Login</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./register.html">Register</a></li>
           <li><a href="./menu.html">Menu</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -48,31 +48,38 @@
 
   <!-- MAIN -->
   <main>
-    <div style="margin-left: 10%; margin-right: 10%;">
-      <ul class="collapsible popout">
-        <li class="active">
-          <div class="collapsible-header">
-            <i class="material-icons">whatshot</i>Children's menu
-          </div>
-          <div class="collapsible-body">
-            <div class="col s12 m7">
-              <div class="card">
-                <div class="card-image"><br>
-                  <img src="./images/infantil.jpg" style="width: 80%; margin-left: 10%;">
-                </div>
-                <div class="card-content">
-                  <p>Ham and cheese pizza</p>
-                  <p>Choice of ice cream or fruit of the day</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-  </main>
+    <h1>Dare un nome originale</h1>
+    <div class="container row" style="background-color: rgb(243, 229, 229);">
+      <h2 style="margin-left: 40%;">Order</h2>
+      <form action="#">
+        <p>Order for:</p>
+        <label>
+          <input name="group1" type="radio" />
+          <span>Home delivery</span>
+        </label>
 
-  <div class="collection">
-    <a class="collection-item"><span class="new badge red"></span>Alan</a>
-  </div>
+        <label>
+          <input name="group1" type="radio" />
+          <span>To pick up</span>
+        </label>
+
+        <label>
+          <input class="with-gap" name="group1" type="radio" checked />
+          <span>To eat in the restaurant</span>
+        </label>
+      </form>
+
+      <!-- Default with no input (automatically generated)  -->
+      <div class="chips"></div>
+      <div class="chips chips-initial"></div>
+      <div class="chips chips-placeholder"></div>
+      <div class="chips chips-autocomplete"></div>
+
+      <!-- Customizable input  -->
+      <div class="chips">
+        <input class="custom-class">
+      </div>
+    </div>
   </main>
 
   <!-- FLOATING BUTTON -->
@@ -85,8 +92,7 @@
             class="material-icons">call</i></a></li>
       <li><a class="btn-floating green" href="mailto:alex.maruru@educa.jcyl.es"><i
             class="material-icons">alternate_email</i></a></li>
-            <li><a class="btn-floating green" href="./contact.html"><i
-              class="material-icons">room_service</i></a></li>
+      <li><a class="btn-floating green" href="./contact.html"><i class="material-icons">room_service</i></a></li>
     </ul>
   </div>
 
@@ -103,7 +109,7 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/floating.js"></script>
-  <script src="js/image.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 
 </html>
