@@ -8,25 +8,40 @@ document.addEventListener('DOMContentLoaded', function() {
   $('.chips').chips();
   $('.chips-initial').chips({
     data: [{
-      tag: 'Apple',
+      tag: 'Egg',
     }, {
-      tag: 'Microsoft',
+      tag: 'Lactose',
     }, {
-      tag: 'Google',
+      tag: 'Gluten',
     }],
   });
   $('.chips-placeholder').chips({
-    placeholder: 'Enter a tag',
-    secondaryPlaceholder: '+Tag',
+    placeholder: 'Enter a allergie',
+    secondaryPlaceholder: '+ Allergie',
   });
   $('.chips-autocomplete').chips({
     autocompleteOptions: {
       data: {
-        'Apple': null,
-        'Microsoft': null,
-        'Google': null
+        'Egg': null,
+        'Lactose': null,
+        'Gluten': null
       },
       limit: Infinity,
       minLength: 1
     }
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.datepicker');
+    var instances = M.Datepicker.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+
+  $(document).ready(function() {
+    $('input#input_text, textarea#textarea2').characterCounter();
   });
