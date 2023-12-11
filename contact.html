@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Second plates</title>
+  <title>Contact</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -27,8 +27,7 @@
   <!-- NAVBAR -->
   <header>
     <nav class="green accent-4" role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><i
-            class="material-icons">restaurant</i>DARE UN NOME ORIGINALE</a>
+      <div class="nav-wrapper container" style="width: auto;">
         <ul class="right hide-on-med-and-down">
           <li><a href="./register.html">Register</a></li>
           <li><a href="./login.html">Login</a></li>
@@ -49,10 +48,47 @@
 
   <!-- MAIN -->
   <main>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloremque inventore veritatis voluptatibus
-      assumenda sit fuga, maiores consequatur illum ipsum natus eos culpa! Facilis magnam sapiente distinctio asperiores
-      quaerat? Ab.</p>
+    <div style="margin-left: 10%; margin-right: 10%;">
+      <ul class="collapsible popout">
+        <li class="active">
+          <div class="collapsible-header">
+            <i class="material-icons">whatshot</i>Children's menu
+          </div>
+          <div class="collapsible-body">
+            <div class="col s12 m7">
+              <div class="card">
+                <div class="card-image"><br>
+                  <img src="./images/infantil.jpg" style="width: 80%; margin-left: 10%;">
+                </div>
+                <div class="card-content">
+                  <p>Ham and cheese pizza</p>
+                  <p>Choice of ice cream or fruit of the day</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
   </main>
+
+  <div class="collection">
+    <a class="collection-item"><span class="new badge red"></span>Alan</a>
+  </div>
+  </main>
+
+  <!-- FLOATING BUTTON -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red accent-4">
+      <i class="large material-icons">contact_support</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating green" href="https://api.whatsapp.com/send?phone=34674596255"><i
+            class="material-icons">call</i></a></li>
+      <li><a class="btn-floating green" href="mailto:alex.maruru@educa.jcyl.es"><i
+            class="material-icons">alternate_email</i></a></li>
+            <li><a class="btn-floating green" href="./contact.html"><i
+              class="material-icons">room_service</i></a></li>
+    </ul>
+  </div>
 
   <!-- FOOTER -->
   <footer class="page-footer">
@@ -66,6 +102,8 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/floating.js"></script>
+  <script src="js/image.js"></script>
 </body>
 
 </html>

@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Second plates</title>
+    <title>Home</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
@@ -26,8 +27,7 @@
     <!-- NAVBAR -->
     <header>
         <nav class="green accent-4" role="navigation">
-            <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">
-                    <i class="material-icons">restaurant</i>DARE UN NOME ORIGINALE</a>
+            <div class="nav-wrapper container" style="width: auto;">
                 <ul class="right hide-on-med-and-down">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./login.html">Login</a></li>
@@ -48,38 +48,60 @@
 
     <!-- MAIN -->
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloremque inventore veritatis
-            voluptatibus
-            assumenda sit fuga, maiores consequatur illum ipsum natus eos culpa! Facilis magnam sapiente distinctio
-            asperiores
-            quaerat? Ab.</p>
+        <h1>Dare un nome originale</h1>
+        <div class="container row" style="background-color: rgb(243, 229, 229);">
+            <h2 style="margin-left: 40%;">Register</h2>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                        <span class="helper-text" data-error="wrong" data-success="right"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                        <span class="helper-text" data-error="wrong" data-success="right"></span>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Register
+                    <i class="material-icons right">send</i>
+                  </button><br><br>
+            </form>
+        </div>
     </main>
+
+    <!-- FLOATING BUTTON -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red accent-4">
+            <i class="large material-icons">contact_support</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating green" href="https://api.whatsapp.com/send?phone=34674596255"><i
+                        class="material-icons">call</i></a></li>
+            <li><a class="btn-floating green" href="mailto:alex.maruru@educa.jcyl.es"><i
+                        class="material-icons">alternate_email</i></a></li>
+            <li><a class="btn-floating green" href="./contact.html"><i class="material-icons">room_service</i></a></li>
+        </ul>
+    </div>
 
     <!-- FOOTER -->
     <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
-                        content.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2023 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="./images/me.png">Alex Urueña</a>
-            </div>
+        <div style="margin-left: 2%; margin-right: 2%; margin-bottom: 1%;">
+            © 2023 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="./images/me.png">Alex Urueña</a>
         </div>
     </footer>
 
@@ -87,8 +109,8 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
-    <script src="js/plates.js"></script>
-
+    <script src="js/floating.js"></script>
+    <script src="js/image.js"></script>
 </body>
 
 </html>
